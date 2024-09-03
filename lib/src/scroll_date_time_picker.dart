@@ -345,7 +345,7 @@ class _ScrollDateTimePickerState extends State<ScrollDateTimePicker> {
           extent = activeDate.weekday - 1;
           break;
         case DateTimeType.hour24:
-          extent = activeDate.hour - 1;
+          extent = activeDate.hour.toDouble();
           break;
         case DateTimeType.hour12:
           extent = _helper.convertToHour12(activeDate.hour) - 1;
